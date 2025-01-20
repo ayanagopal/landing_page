@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiny5&display=swap');
+
+
+/* resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-clr: #183b56;
+    --secondary-text-clr: #577592;
+    --accent-color: #2294ed;
+    --padding-inline-section: 20px;
+    --accent-color-dark: #1d69a3;
+}
+
+body {
+    font-family: 'Poppins', 'sans-serfif';
+    color: var(--primary-text-clr);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    color: var(--secondary-text-clr);
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+/* utility classes */
+.small-bold-text {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding: var(--padding-inline-section);
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.hover-link {
+    color: var(--primary-text-clr);
+    transition: 0.2s ease-out;
+}
+
+.hover-link:hover {
+    color: var(--accent-color);
+}
+
+.primary-button {
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    color: white !important;
+    font-weight: 700;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-clr);
+    transition: 0.2s ease-out;
+}
+
+.primary-button:hover {
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-button {
+    background-color: transparent;
+    border: 0.5px solid var(--secondary-text-clr);
+    font-weight: 700;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+    border-radius: 5px;
+    color: #1d69a3;
+}
+
+.secondary-button:hover {
+    background-color: var(--accent-color-dark);
+    color: white !important;
+}
+
+
+/* TOP BANNER */
+
+.top-banner {
+    background-color: #4fb3d4;
+    background-image: url(./images/asset\ 30.png);
+    background-size: 300px;
+
+}
+
+.banner-text {
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* TOP BANNER END */
+
+/* NAV BAR START */
+
+.main-nav {
+    justify-content: space-between;
+    position: relative;
+    /* margin-top:5px; */
+}
+
+.company_logo img {
+    width: 200px;
+}
+
+.nav-links {
+    flex-basis: 730px;
+}
+
+.nav-links ul {
+    justify-content: end;
+    gap: 40px;
+}
+
+.nav-toggle{
+    display: none;
+}
+
+/* NAV BAR END   */
+
+/* HEADER START */
+
+.header {
+    padding: 50px var(--padding-inline-section);
+
+}
+
+.header-section {
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-left {
+    max-width: 40vw;
+}
+
+.header-right img {
+    width: 100%;
+
+}
+
+.get-started-button {
+    margin-top: 20px;
+}
+
+/* HEADER END */
+/* 
+COMPANIES START */
+
+.companies-header {
+    text-align: center;
+    margin-block: 30px;
+    color: var(--primary-text-clr);
+}
+
+
+.logos {
+    justify-content: space-evenly;
+    gap:20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    height: 46px;
+
+}
+
+/* Featurs and many buttons */
+
+.features-section {
+    padding: 30px var(--padding-inline-section) 0;
+    background-image: url(images/asset\ 32.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.upper {
+    flex-direction: column;
+    /* border: 0.5px solid var(--accent-color-dark); */
+    /* padding: 15px;
+    border-radius: 15px; */
+}
+
+.below {
+    justify-content: space-between;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.mini-container {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 2px;
+    max-width: 30%;
+    text-align: center;
+}
+
+/* BIG-FEATURES SECTION */
+
+.big-features-section {
+    gap: 50px;
+    padding: 30px var(--padding-inline-section) 0;
+   
+}
+
+.bfs-img1 {
+    justify-content: center;
+
+}
+
+.bfs-img1 img {
+    width: 80%;
+}
+
+.bfs-content1 {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bfs-content1 h4{
+    color: #1d69a3;
+}
+
+
+/* BIG-FEATURES SECTION-END */
+
+
+/* EXAMPLES-SECTION-START */
+.examples-section{
+    padding: 50px var(--padding-inline-section);
+}
+.examples-section1 {
+    justify-content: center;
+    margin-top: 100px;
+    flex-direction: column;
+}
+
+.upper-eg {
+    flex-direction: column;
+}
+
+.upper-eg h1{
+    text-align: center;
+}
+
+.examples-area {
+    margin-block: 20px;
+    justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+ .example {
+    width:23%;
+    position: relative;
+    border-radius: 5px;
+    position: relative;
+    height: 270px;
+    background-size: cover;
+    transition: 0.2s ease-out;
+   
+}
+
+.example:hover{
+    box-shadow: 0 0 10px #888;
+}
+
+.card-text{
+    position: absolute;
+    bottom:20px;
+    left:20px;
+    color: white;
+}
+
+.examples-card1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), 
+                url("images/Hollie Fernando’s dreamlike imagery pays homage to classical paintings.jpg");
+    background-size: cover;
+}
+
+.examples-card2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), 
+                url("images/download.jpg");
+    background-size: cover;
+}
+
+
+.examples-card3 {
+    background-image: url(images/Top\ Travel\ Websites\ For\ Planning\ Your\ Next\ Adventure.jpg);
+}
+
+.examples-card4 {
+background-image: url(images/Study\ time.jpg);
+}
+
+/* EXAMPLES-SECTION-END */
+
+/* CTA SECTION START */
+
+.cta{
+    background-color: #0d3d61;
+    padding: 80px var(--padding-inline-section) 50px;
+}
+
+.cta1{
+    justify-content: center;
+    flex-direction: column;
+    gap:20px;
+}
+
+.cta1 h2,h4,a{
+    color: white;
+}
+
+/* CTA SECTION END */
+
+/* FOOTER1 SECTION Start */
+
+.footer1{
+    justify-content: space-between;
+    padding-block:30px ;
+}
+
+li{
+    margin-block:15px;
+    cursor: pointer;
+}
+
+.list{
+    align-items: flex-start;
+}
+
+/* Footer SECTION END */
+
+/* SUB-Footer SECTION START */
+.sub-footer{
+    background-color: #b9cde4;
+    padding: var(--primary-text-clr);
+
+}
+
+.sub-footer-container{
+    justify-content: center;
+    gap:30px;
+    flex-wrap: wrap;
+}
+
+/* SUB-Footer SECTION END */
+
